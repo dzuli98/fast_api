@@ -30,7 +30,7 @@ class User(BaseModel):
 class ShowUser(BaseModel):
     name: str
     email: str
-    blogs: List[ShowBlog] = []
+    blogs: List[Blog] = []
 
     model_config = {
         "from_attributes": True
